@@ -15,9 +15,13 @@ num_words = 0
 #Characters
 num_chars = 0
 
-with open(file,'r') as f:
-    for line in f
-    words = line.split()
-    num_lines += 1
-    num_words += len(words)
-    num_chars += len(chars)
+with open(file,'r') as text:
+    for line in file:
+        words = line.split()
+
+        num_lines += 1
+        num_words += len(words)
+        num_chars += len(line)
+    print(num_lines)
+    print(num_words)
+    print(num_chars)
